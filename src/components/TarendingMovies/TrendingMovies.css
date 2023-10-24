@@ -1,0 +1,27 @@
+.cardBody {
+    height: 12rem;
+}
+
+.Card.Img img {
+    height: 50% !important;
+}
+
+.card {
+    width:90%;
+    transition: all 1s;
+}
+
+.card:hover {
+transform: scale(1.1);
+}
+.card .btn{
+    background-color: #000000 ;
+    border: 0;
+    color: white;
+    transition: all 1.2s;
+}
+
+.card .btn :hover{
+    background-color: white !important ;
+    color: black !important;
+}
