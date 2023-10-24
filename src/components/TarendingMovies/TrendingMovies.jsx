@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import useCallingTrending from "../../hooks/useCallingTrending";
 import {} from "./TrendingMovies.css";
+import Loading from "../Loading/Loading";
 
 const TrendingMovies = () => {
   const [dataList, loading, error] = useCallingTrending(
@@ -9,7 +10,7 @@ const TrendingMovies = () => {
   );
 
   return (
-    <>
+    <Loading loading={loading} error={error}>
       {dataList.map((movie) => {
         return (
           <>
@@ -25,7 +26,9 @@ const TrendingMovies = () => {
                     {movie.overview.split(" ").slice(0, 10).join(" ")}...
                   </Card.Text>
                   <button className="btn">
-                    <Link to={`/${movie.media_type}/${movie.id}`}>Show Details</Link>
+                    <Link to={`/${movie.media_type}/${movie.id}`}>
+                      Show Details
+                    </Link>
                   </button>
                 </Card.Body>
               </Card>
@@ -33,7 +36,7 @@ const TrendingMovies = () => {
           </>
         );
       })}
-    </>
+    </Loading>
   );
 };
 export default TrendingMovies;

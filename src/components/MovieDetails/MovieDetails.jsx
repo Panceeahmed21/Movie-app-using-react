@@ -1,4 +1,4 @@
-import React from "react";
+import Loading from "../Loading/Loading"
 import { useParams } from "react-router-dom";
 import useCaliingDetailsApi from "../../hooks/useCaliingDetailsApi";
 
@@ -7,6 +7,7 @@ const MovieDetails = () => {
   const [movieDetails, loading, error] = useCaliingDetailsApi(media, id);
   return (
     <>
+      <Loading loading={loading} error={error}>
       <div className="container py-5 my-2">
         <div className="row">
           <div className="col-md-6 w-50">
@@ -61,6 +62,8 @@ const MovieDetails = () => {
           </div>
         </div>
       </div>
+
+      </Loading>
     </>
   );
 };
