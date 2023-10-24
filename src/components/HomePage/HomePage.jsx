@@ -1,29 +1,35 @@
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import TrendingMovies from "../TarendingMovies/TrendingMovies";
+import {} from "./HomePage.css";
 const HomePage = () => {
   return (
     <>
-      <div className="container">
-        <h1 className="my-3">Welcome to our website!</h1>
+      <header className="header ">
+        <div className="bg-color d-flex justify-content-center">
+          <div className="container w-50 ms-0 px-5 d-flex align-items-center ">
+            <h1 className="">Unlimited movies, TV shows, and more</h1>
 
-        <div className="row py-2">
-          <div className="col-md-8 m-auto">
-            <InputGroup size="md">
-              <Form.Control
-                aria-label="Large"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <InputGroup.Text id="inputGroup-sizing-lg">
-                <button className="btn">Search</button>
-              </InputGroup.Text>
-            </InputGroup>
+            <div className="row ">
+              {/* <div className="col-md-8 ">
+                <InputGroup size="md">
+                  <Form.Control
+                    aria-label="Large"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                  <InputGroup.Text id="inputGroup-sizing-lg">
+                    <button className="btn">Search</button>
+                  </InputGroup.Text>
+                </InputGroup>
+              </div> */}
+            </div>
           </div>
         </div>
-        <div className="row py-3">
-          <div className="col-md-3">
-          <TrendingMovies/>
-          </div>
+      </header>
+
+      <div className="container py-5">
+        <div className="row gy-5 py-3 px-5 d-flex justify-content-center ">
+          <TrendingMovies />
         </div>
       </div>
     </>

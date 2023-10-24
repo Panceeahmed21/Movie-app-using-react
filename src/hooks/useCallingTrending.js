@@ -11,13 +11,14 @@ const useCallingTrending = (api) => {
       .then((json) => {
         setDataList(json.results);
         setLoading(false);
-       
+        console.log(json.results
+          );
       })
       .catch((error) => {
         setError(error);
       });
   }, []);
-  return [dataList,loading,error];
+  return [dataList, loading, error];
 };
 
 export default useCallingTrending;

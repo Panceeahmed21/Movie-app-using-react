@@ -1,0 +1,16 @@
+h1 {
+    font-size: 3.5rem !important;
+}
+.header {
+    background-image: url('../../assets/header1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    background-attachment: fixed;
+  }
+  .bg-color{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    height: 100%;
+ 
+  }
