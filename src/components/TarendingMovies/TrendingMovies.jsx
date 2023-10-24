@@ -1,4 +1,4 @@
-import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import useCallingTrending from "../../hooks/useCallingTrending";
 import {} from "./TrendingMovies.css";
@@ -24,7 +24,9 @@ const TrendingMovies = () => {
                   <Card.Text>
                     {movie.overview.split(" ").slice(0, 10).join(" ")}...
                   </Card.Text>
-                  <button className="btn">Show Details</button>
+                  <button className="btn">
+                    <Link to={`/MovieDetails/${movie.id}`}>Show Details</Link>
+                  </button>
                 </Card.Body>
               </Card>
             </div>
