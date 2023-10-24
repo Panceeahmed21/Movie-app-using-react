@@ -25,7 +25,7 @@ const TrendingMovies = () => {
                     {movie.overview.split(" ").slice(0, 10).join(" ")}...
                   </Card.Text>
                   <button className="btn">
-                    <Link to={`/MovieDetails/${movie.id}`}>Show Details</Link>
+                    <Link to={`/${movie.media_type}/${movie.id}`}>Show Details</Link>
                   </button>
                 </Card.Body>
               </Card>

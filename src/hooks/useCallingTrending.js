@@ -6,17 +6,18 @@ const useCallingTrending = (api) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    return fetch(api)
-      .then((response) => response.json())
-      .then((json) => {
+    const getTrendyMovies = async () => {
+      try {
+        const response = await fetch(api);
+        const json = await response.json();
         setDataList(json.results);
         setLoading(false);
-        console.log(json.results
-          );
-      })
-      .catch((error) => {
+      } catch (error) {
         setError(error);
-      });
+        setLoading(false);
+      }
+    };
+    getTrendyMovies();
   }, []);
   return [dataList, loading, error];
 };

@@ -15,24 +15,12 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/home" element={<HomePage />}></Route>
-          <Route path="/MovieDetails/:id" element={<MovieDetails />}></Route>
+          <Route path="/:media/:id" element={<MovieDetails />}></Route>
         </Routes>
       </Router>
       <Footer></Footer>
-      <script
-        src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
-        crossorigin
-      ></script>
 
-      <script
-        src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
-        crossorigin
-      ></script>
-
-      <script
-        src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
-        crossorigin
-      ></script>
+    
     </>
   );
 }
