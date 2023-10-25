@@ -18,7 +18,9 @@ const MovieDetails = () => {
               />
             </div>
             <div className="col-md-6">
-              <h2 className="mb-4">{movieDetails.original_title}</h2>
+              <h2 className="mb-4">{movieDetails.name}</h2>
+              <h3 className="mb-4">{movieDetails.original_title}</h3>
+
               <p className="text-muted">{movieDetails.overview}</p>
               <h5>
                 Language :
