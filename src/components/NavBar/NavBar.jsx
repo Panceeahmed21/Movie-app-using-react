@@ -18,17 +18,23 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link>
-              <button className="btn border-2 fw-bold border-white fs-5">
+              <button className="btn fw-bold border-white fs-5 mx-2">
                 {" "}
                 <Link to={"/home"}>Home</Link>
+              </button>
+              <button className="btn fw-bold border-white fs-5 mx-2">
+                {" "}
+                <Link to={"/tv"}>TV Shows</Link>
+              </button>
+              <button className="btn fw-bold border-white fs-5 mx-2">
+                {" "}
+                <Link to={"/people"}>People</Link>
               </button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
-      
     </Navbar>
-    
   );
 }
 

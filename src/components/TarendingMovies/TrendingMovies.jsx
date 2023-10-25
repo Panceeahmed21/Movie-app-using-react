@@ -15,13 +15,13 @@ const TrendingMovies = () => {
         return (
           <>
             <div className="col-md-4 ">
-              <Card>
+              <Card className="trending__card">
                 <Card.Img
                   variant="top"
                   src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`}
                 />
                 <Card.Body className="cardBody">
-                  <Card.Title>{movie.title}</Card.Title>
+                  <Card.Title className="card__title">{movie.title}</Card.Title>
                   <Card.Text>
                     {movie.overview.split(" ").slice(0, 10).join(" ")}...
                   </Card.Text>

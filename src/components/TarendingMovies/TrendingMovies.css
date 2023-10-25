@@ -6,12 +6,12 @@
     height: 50% !important;
 }
 
-.card {
+.trending__card {
     width: 90%;
     transition: all 1s;
 }
 
-.card:hover {
+.trending__card:hover {
     transform: scale(1.1);
 
 }
