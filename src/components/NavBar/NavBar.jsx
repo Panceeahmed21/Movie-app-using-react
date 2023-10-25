@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {} from "./NavBar.css";
 function NavBar() {
   return (
-    <Navbar expand="lg" className="nav__bg py-4">
+    <Navbar expand="lg" className="nav__bg py-2 fixed-top">
       <Container>
         <Navbar.Brand className=" w-25">
           <Link to={"/"}>

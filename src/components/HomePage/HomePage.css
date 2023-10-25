@@ -5,7 +5,7 @@ h1 {
     background-image: url('../../assets/header1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     color: white;
     background-attachment: fixed;
   }
