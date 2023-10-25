@@ -14,8 +14,7 @@ const HomePage = () => {
       </header>
 
       <div className="container py-5">
-        <div className="row gy-5 py-3 px-5 d-flex justify-content-center ">
-          <div className="row ">
+      <div className="row ">
             <div className="col-md-8 py-5">
               <h2 className="mb-3">What do you want to watch?</h2>
               <InputGroup size="md">
@@ -30,6 +29,9 @@ const HomePage = () => {
               </InputGroup>
             </div>
           </div>
+        <div className="row gy-5 py-3 px-5 d-flex justify-content-center ">
+        <h2>Trending Movies </h2>
+  
           <TrendingMovies />
         </div>
       </div>
