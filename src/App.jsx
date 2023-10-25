@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import MovieDetails from "./components/MovieDetails/MovieDetails";
 import PopularPeople from "./components/People/PopularPeople";
 import Tv from "./components/Tv/Tv";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Route path="/:media/:id" element={<MovieDetails />}></Route>
           <Route path="/people" element={<PopularPeople />}></Route>
           <Route path="/tv" element={<Tv />}></Route>
+          <Route path="/*" element={< NotFound/>}></Route>
+
 
 
         </Routes>
