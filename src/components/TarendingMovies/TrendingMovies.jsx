@@ -3,11 +3,13 @@ import Card from "react-bootstrap/Card";
 import useCallingTrending from "../../hooks/useCallingTrending";
 import {} from "./TrendingMovies.css";
 import Loading from "../Loading/Loading";
+import { useEffect } from "react";
 
-const TrendingMovies = () => {
+const TrendingMovies = ({ selectedOption }) => {
   const [dataList, loading, error] = useCallingTrending(
-    "https://api.themoviedb.org/3/trending/all/day?api_key=14bdd69ce887376edfafb09f23f78fe9"
-  );
+    `https://api.themoviedb.org/3/${selectedOption}/popular?api_key=14bdd69ce887376edfafb09f23f78fe9`
+  )
+  
 
   return (
     <Loading loading={loading} error={error}>
