@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import TrendingMovies from "../TarendingMovies/TrendingMovies";
-import FormSelect from "react-bootstrap/FormSelect";
 import {} from "./HomePage.css";
 
 const HomePage = () => {
@@ -50,16 +48,7 @@ const HomePage = () => {
                   <button className="btn btn-primary" onClick={getInputValue}>Search</button>
                 </div>
               </div>
-              <div className="col-md-2">
-                <Form.Select
-                  aria-label="Media Type"
-                  onChange={onChangeOption}
-                  value={selectedOption}
-                >
-                  <option value="movie">Movies</option>
-                  <option value="tv">TVs</option>
-                </Form.Select>
-              </div>
+          
             </div>
           </div>
         </div>
